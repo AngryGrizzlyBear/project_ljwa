@@ -1,3 +1,39 @@
 body {
-  background-color: #eee8d5 ;
+  background-color: #eee8d5;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  margin-left: -10px;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar #logo {
+  float: left;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.center {
+  margin-top: 3%;
+  text-align: center;
 }
