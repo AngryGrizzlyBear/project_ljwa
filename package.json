@@ -6,6 +6,7 @@
   "author": "Evan Longwood <evanmlongwood@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "materialize-css": "^1.0.0-rc.2"
+    "materialize-css": "^1.0.0-rc.2",
+    "normalize.css": "^8.0.1"
   }
 }

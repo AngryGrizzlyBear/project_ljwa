@@ -1,6 +1,12 @@
 html {
   height: 100%;
   background: linear-gradient(0deg, #dcf2e3, #82d4c1, #3e6b88 80%) no-repeat;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 header {
@@ -12,10 +18,23 @@ header {
   color: white;
 }
 
-.nav-left{
+.nav-left {
   float: left;
   width: 12%;
   height: 300px;
   padding: 20px;
+}
 
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+/* mobile first */
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
