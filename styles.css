@@ -2,3 +2,20 @@ html {
   height: 100%;
   background: linear-gradient(0deg, #dcf2e3, #82d4c1, #3e6b88 80%) no-repeat;
 }
+
+header {
+  background-color: #3e6b88;
+  padding: 30px;
+  margin: -30px -10px 20px -10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.nav-left{
+  float: left;
+  width: 12%;
+  height: 300px;
+  padding: 20px;
+
+}
