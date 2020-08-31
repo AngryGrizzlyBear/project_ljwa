@@ -1,13 +1,8 @@
 html {
-  height: 100%;
   background: linear-gradient(0deg, #dcf2e3, #82d4c1, #3e6b88 80%) no-repeat;
   box-sizing: border-box;
 }
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+
 
 header {
   background-color: #3e6b88;
@@ -18,23 +13,44 @@ header {
   color: white;
 }
 
-.nav-left {
-  float: left;
-  width: 12%;
-  height: 300px;
-  padding: 20px;
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 10px;
-  max-width: 1000px;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
 }
 
-/* mobile first */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
 
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 2rem;
-  }
+.main {
+  margin-left: 160px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+p,
+a {
+  font-family: roboto;
+}
+
+h1 {
+  font-family: roboto;
+
 }
