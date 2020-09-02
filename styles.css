@@ -27,7 +27,8 @@ header {
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 6px 8px 6px 13px;
+  margin-top: 25px;
   text-decoration: none;
   font-size: 25px;
   color: #e97c87;
@@ -56,5 +57,5 @@ p {
   background-color: #fcf5b1;
   border-radius: 25px;
   border: 2px solid #644c8c;
-  padding: 20px;
+  padding: 40px;
 }
