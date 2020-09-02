@@ -3,10 +3,9 @@ html {
   box-sizing: border-box;
 }
 
-
 header {
   background-color: #3e6b88;
-  padding: 30px;
+  padding: 27px;
   margin: -30px -10px 20px -10px;
   text-align: center;
   font-size: 35px;
@@ -20,21 +19,23 @@ header {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: grey;
+  background-color: #9efed3;
   overflow-x: hidden;
   padding-top: 20px;
+  border-radius: 0px 25px;
+  border: 1px solid;
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: white;
+  color: #e97c87;
   display: block;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #38324b;
 }
 
 .main {
@@ -46,11 +47,14 @@ header {
 }
 
 p,
-a {
+a,
+h1 {
   font-family: roboto;
 }
 
-h1 {
-  font-family: roboto;
-
+p {
+  background-color: #fcf5b1;
+  border-radius: 25px;
+  border: 2px solid #644c8c;
+  padding: 20px;
 }
