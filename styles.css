@@ -1,50 +1,54 @@
 html {
   background: linear-gradient(0deg, #dcf2e3, #82d4c1, #3e6b88 80%) no-repeat;
   box-sizing: border-box;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  width: 100%;
 }
 
-header {
-  background-color: #3e6b88;
-  padding: 27px;
-  margin: -30px -10px 20px -10px;
+h1 {
   text-align: center;
   font-size: 35px;
   color: white;
 }
 
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
   background-color: #9efed3;
-  overflow-x: hidden;
-  padding-top: 20px;
-  border-radius: 0px 25px;
-  border: 1px solid;
+  position: fixed;
+  height: 50%;
+  overflow: auto;
+  border-radius: 15px;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 13px;
-  margin-top: 25px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #e97c87;
+.sidebar a {
   display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
 }
 
-.sidenav a:hover {
-  color: #38324b;
+.sidebar a.active {
+  background-color: #4caf50;
+  color: white;
 }
 
-.main {
-  margin-left: 160px;
-  /* Same as the width of the sidenav */
-  font-size: 28px;
-  /* Increased text to enable scrolling */
-  padding: 0px 10px;
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
 
 p,
@@ -53,9 +57,34 @@ h1 {
   font-family: roboto;
 }
 
-p {
+.card {
   background-color: #fcf5b1;
   border-radius: 25px;
   border: 2px solid #644c8c;
-  padding: 40px;
+  width: auto;
+  height: 70%;
+  margin: auto;
+  overflow: scroll;
+  padding: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
