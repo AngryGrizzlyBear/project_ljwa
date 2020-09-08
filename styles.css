@@ -67,6 +67,7 @@ h1 {
   margin: auto;
   overflow: scroll;
   overflow-y: auto;
+  overflow-x: auto;
   padding: 50px;
 }
 
