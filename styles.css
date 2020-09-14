@@ -1,15 +1,13 @@
 html {
   background: linear-gradient(0deg, #dcf2e3, #82d4c1, #3e6b88 80%) no-repeat;
   box-sizing: border-box;
-  margin: 0;
-  min-height: 100%;
-  min-width: 100%;
 }
 
 body {
-  min-height: 100%;
+  height: 100vh;
   margin: 0;
-  width: 100%;
+  overflow: hidden;
+  width: 100vw;
 }
 
 h1 {
@@ -56,7 +54,9 @@ h1 {
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
-  height: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 p,
@@ -76,6 +76,9 @@ h1 {
   scrollbar-width: none;
   padding: 50px;
   padding-top: 25px;
+  flex: 1;
+  margin-bottom: 36px;
+  max-width: 700px;
 }
 
 div::-webkit-scrollbar {
