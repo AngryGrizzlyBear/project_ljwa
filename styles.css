@@ -26,7 +26,6 @@ body {
   flex: 30%;
   max-width: 800px;
   margin: auto;
-  justify-content: center;
 }
 
 .sidebar a {
