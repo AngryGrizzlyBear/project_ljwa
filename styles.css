@@ -8,6 +8,8 @@ body {
   margin: 0;
   overflow: hidden;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -21,12 +23,9 @@ body {
 .sidebar {
   display: flex;
   background-color: #9efed3;
-  overflow: auto;
   border: 2px solid #644c8c;
   border-radius: 15px;
-  flex: 30%;
   width: 100%;
-  margin: auto;
 }
 
 .sidebar a {
@@ -48,6 +47,9 @@ body {
 
 .main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
 }
 
 .row {
@@ -57,6 +59,9 @@ body {
   flex-direction: column;
   max-width: 800px;
   margin: 0 auto;
+  flex: 1;
+  overflow: hidden;
+  padding: 0 20px 20px;
 }
 
 .side {
@@ -75,15 +80,14 @@ h1 {
   border-radius: 25px;
   border: 2px solid #644c8c;
   width: auto;
-  margin: 16px 0px;
   overflow: auto;
   scrollbar-width: none;
   padding: 50px;
   padding-top: 25px;
   flex: 1;
-  margin-bottom: 36px;
   max-width: 700px;
   bottom: 0;
+  margin-top: 16px;
 }
 
 div::-webkit-scrollbar {
@@ -92,4 +96,10 @@ div::-webkit-scrollbar {
 
 .center {
   text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .sidebar {
+    min-width: ;
+  }
 }
