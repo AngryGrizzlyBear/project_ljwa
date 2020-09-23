@@ -25,7 +25,7 @@ body {
   border: 2px solid #644c8c;
   border-radius: 15px;
   flex: 30%;
-  max-width: 800px;
+  width: 100%;
   margin: auto;
 }
 
@@ -47,8 +47,7 @@ body {
 }
 
 .main {
-  flex: 70%;
-  padding: 20px;
+  flex: 1;
 }
 
 .row {
@@ -56,6 +55,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .side {
@@ -74,8 +75,7 @@ h1 {
   border-radius: 25px;
   border: 2px solid #644c8c;
   width: auto;
-  height: 30rem;
-  margin: auto;
+  margin: 16px 0px;
   overflow: auto;
   scrollbar-width: none;
   padding: 50px;
@@ -92,14 +92,4 @@ div::-webkit-scrollbar {
 
 .center {
   text-align: center;
-}
-
-@media screen and (max-width: 700px) {
-  .row,
-  .sidebar .card {
-    flex-direction: column;
-  }
-  .card {
-    max-height: 250px;
-  }
 }
