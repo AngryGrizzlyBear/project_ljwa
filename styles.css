@@ -97,9 +97,3 @@ div::-webkit-scrollbar {
 .center {
   text-align: center;
 }
-
-@media screen and (min-width: 500px) {
-  .sidebar {
-    min-width: ;
-  }
-}
