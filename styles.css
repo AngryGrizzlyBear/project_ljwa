@@ -26,7 +26,8 @@ body {
   border: 2px solid #644c8c;
   border-radius: 15px;
   width: 100%;
-  overflow: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sidebar a {
