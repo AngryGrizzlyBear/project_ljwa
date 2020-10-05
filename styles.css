@@ -15,7 +15,7 @@ body {
 .header {
   color: #fdf6e3;
   font-family: "Pattaya", sans-serif;
-  padding: 25px;
+  padding-bottom: 25px;
   text-align: center;
   justify-content: center;
 }
